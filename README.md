@@ -1,6 +1,7 @@
 # LibraryAPI
 API рабочего места библиотекаря (C#, .NET Core, Entity Framework, MS SQL Server LocalDB)
 
+```C#
 //Описание методов API с примерами HTTP запросов с телом JSON
 
 1. Работа с книгами
@@ -89,7 +90,7 @@ PUT: api/Readers/1
 //выдать книгу читателю
 POST: api/Issues/bookOut
 {
-	"Date_start":"2021-11-11T12:34:56", 
+	"Date_start":"2021-11-11T12:34:56",
 	"Date_end":null
 	"BookExampleId":1,
 	"ReaderId":2
@@ -99,7 +100,7 @@ POST: api/Issues/bookOut
 PUT: api/Issues/bookIn/1
 {
 	"Id":1,
-	"Date_start":"2021-11-11T12:34:56", 
+	"Date_start":"2021-11-11T12:34:56",
 	"Date_end":"2021-11-14T09:12:15",
 	"BookExampleId":1,
 	"ReaderId":2
@@ -110,3 +111,4 @@ GET: api/Readers/2
 
 //поиск читателя(-ей) по ФИО или его части (substring) со списком выданных книг
 GET: api/Readers/name=substring
+```
