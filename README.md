@@ -9,10 +9,10 @@ API рабочего места библиотекаря (C#, .NET Core, Entity 
 //добавить новую книгу
 POST: api/Books
 {
-    "Name":"War and Peace",
-    "Author":"Tolstoy L.N.",
-    "Article":"221n5",
-    "YearPublic":1867
+  "Name":"War and Peace",
+  "Author":"Tolstoy L.N.",
+  "Article":"221n5",
+  "YearPublic":1867
 }
 
 //добавить экземпляр книги
@@ -26,21 +26,21 @@ POST: api/BookExamples
 PUT: api/Books/1
 {
 	"Id":1,
-    "Name":"War and Peace",
-    "Author":"Tolstoy L.N.",
-    "Article":"254n1",
-    "YearPublic":1867,
+  "Name":"War and Peace",
+  "Author":"Tolstoy L.N.",
+  "Article":"254n1",
+  "YearPublic":1867,
 	"Lock":false
 }
 
 //удалить данные о книге (параметр Lock = true)
 PUT: api/Books/1
 {
-    "Id":1,
-    "Name":"Anna Karenina",
-    "Author":"Tolstoy L.N.",
-    "Article":"254n1",
-    "YearPublic":1867,
+  "Id":1,
+  "Name":"Anna Karenina",
+  "Author":"Tolstoy L.N.",
+  "Article":"254n1",
+  "YearPublic":1867,
 	"Lock":true
 }
 
@@ -65,8 +65,8 @@ GET: api/Books/name=substring
 //добавить нового читателя
 POST: api/Readers
 {
-    "FIO":"Antonov A.A.",
-    "Birthday":"1990-01-05T00:00:00"
+  "FIO":"Antonov A.A.",
+  "Birthday":"1990-01-05T00:00:00"
 }
 
 //изменить данные о читателе
@@ -74,7 +74,7 @@ PUT: api/Readers/1
 {
 	"Id":1,
 	"FIO":"Antonov A.A.",
-    "Birthday":"1990-02-05T00:00:00",
+  "Birthday":"1990-02-05T00:00:00",
 	"Lock":false
 }
 
@@ -83,7 +83,7 @@ PUT: api/Readers/1
 {
 	"Id":1,
 	"FIO":"Antonov A.A.",
-    "Birthday":"1990-02-05T00:00:00",
+  "Birthday":"1990-02-05T00:00:00",
 	"Lock":true
 }
 
